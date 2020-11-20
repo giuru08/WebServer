@@ -6,6 +6,7 @@ Installiamo **ssh** *apt-get install openssh-server*.<br>
 Modifica dell'**indirizzo IP** tramite file presente in */etc/netplan/...*.<br>
 **Comando** 
 >*netplan try*
+
 Applicare la **modalità bridge** da VirtualBox.<br>
 Installiamo il **webserver** *apt-get install apache2*.<br>
 Si creano **più siti** sulla stessa macchina aggiungendo file di configurazione in */etc/apache2/sites-avaiable/...*.<br>
