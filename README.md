@@ -1,4 +1,4 @@
-# SERVER WEB SU VIRTUAL MACHIEN CON APACHE2
+# SERVER WEB SU VIRTUAL MACHIne CON APACHE2
 ### Rucco Giulio
 
 ## CONFIGURAZIONE
@@ -14,7 +14,7 @@ Modificare il **file di configurazione** */etc/vsftp.conf* come scritto su campu
 Aggiungere 3 nuovi **utenti**, uno per ogni server *useradd -s /bin/bash -d /var/www/... -m nomeUtente*.<br>
 Impostare la **password per ogni utente** *passwd nomeUtente* --> *Inserimento della password*.<br>
 
-## PROCESSO DI CONFERMA
+## CONTROLLI DI CONNESSIONE
 - Si può verificare l'effettiva installazione di openssh provando a connettersi tramite "PuTTy" o da altre shell ssh.<br>
 - Si può, inoltre, verificare quella di apache inserendo l'indirizzo IP della macchina virtuale nel browser e visualizzare la pagina default di apache in risposta.<br>
 - Allo stesso modo, una volta creati i diversi siti tramite apache, basterà inserire il loro indirizzo nel browser per verificarne l'effettiva visualizzazione.<br>
