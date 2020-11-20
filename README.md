@@ -13,6 +13,8 @@ Installazione di programma **FTP** tramite comando *apt-get install vsftpd*.<br>
 Modificare il **file di configurazione** */etc/vsftp.conf* come scritto su campus dal professore.<br>
 Aggiungere 3 nuovi **utenti**, uno per ogni server *useradd -s /bin/bash -d /var/www/... -m nomeUtente*.<br>
 Impostare la **password per ogni utente** *passwd nomeUtente* --> *Inserimento della password*.<br>
+Dopo la creazione degli utenti si vanno a dare i **permessi alle cartelle** *chown -R nomeUtente:nomeUtente /var/www/cartellaSito*.<br>
+Facendo così si potrà sia scaricare che caricare file sulla cartella in **FTP** da remoto sul desktop attraverso Filezilla.<br>
 
 ## CONTROLLI DI CONNESSIONE
 - Si può verificare l'effettiva installazione di openssh provando a connettersi tramite "PuTTy" o da altre shell ssh.<br>
