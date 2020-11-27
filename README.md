@@ -29,9 +29,9 @@ Esempio Configurazione:<br>
 Esempio di risposta:
 >
 >
->   Warning: Stopping systemd-networkd.service, but it can still be activated by:
->     systemd-networkd.socket
->   Do you want to keep these settings?
+>   Warning: Stopping systemd-networkd.service, but it can still be activated by:<br>
+>     systemd-networkd.socket<br>
+>   Do you want to keep these settings?<br>
 >   Press ENTER before the timeout to accept the new configuration
 
 Premere enter per accettare le configurazioni fatte.<br>
@@ -69,8 +69,8 @@ Dopo avr creato i flie in */etc/apache2/sites-avaiable/...* si **crea un nuovo s
 la risposta sarà:
 >
 >
->   Enabling site 000-default.
->   To activate the new configuration, you need to run:
+>   Enabling site 000-default.<br>
+>   To activate the new configuration, you need to run:<br>
 >     systemctl reload apache2
 
 
