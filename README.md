@@ -38,10 +38,14 @@ Premere enter per accettare le configurazioni fatte.<br>
 Applicare la **modalità bridge** da VirtualBox.<br>
 
 ## CHECKPOINT :white_check_mark:
-Controlliamo sia in funzione con un ping a Google o un ping dalla macchina fisica a quella virtuale.
+Controlliamo sia in funzione con un ping a Google, con un ping dalla macchina fisica a quella virtuale o con il **comando**:
+>*ip addr
+
+Esempio di **ping**: 
 >*ping www.google.com*
 
 o 
+
 >*ping "IpDellaMAcchina"*
 
 Installiamo il **webserver** 
@@ -78,16 +82,16 @@ Modificare il **file di configurazione**
 >*/etc/vsftp.conf* 
 
 come scritto su campus dal professore.<br>
-Aggiungere nuovo **utente**, uno per ogni server 
+Aggiungere nuovo **utente** 
 >*useradd -s /bin/bash -d /var/www/... -m nomeUtente*.<br>
 
-Impostare la **password per ogni utente** 
+Impostare la **password per l'utente** 
 >*passwd nomeUtente* --> *Inserimento della password*.<br>
 
-Dopo la creazione degli utenti si vanno a dare i **permessi alle cartelle** 
+Dopo la creazione dell' utente si vanno a dare i **permessi alle cartelle** 
 >*chown -R nomeUtente:nomeUtente /var/www/cartellaSito*.<br>
 
 ## CHECKPOINT :white_check_mark:
-Per controllare di avere creato in maniera adeguata gli utenti si controlla accedendo da **PuTTY** con i *nomiUtente* e le *Password* corrispondenti.
+Per controllare di avere creato in maniera adeguata l'utente si controlla accedendo da **PuTTY** con il *nomeUtente* e la *Password* corrispondente.
 
 Facendo così si potrà sia scaricare che caricare file sulla cartella in **FTP** da remoto sul desktop attraverso Filezilla.<br>
