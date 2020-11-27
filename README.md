@@ -46,16 +46,16 @@ Esempio di **ping**:
 
 o 
 
->*ping "IpDellaMAcchina"*
+>*ping [IpDellaMAcchina]*
 
 Installiamo il **webserver** 
 >*apt-get install apache2*.<br>
 
-Si creano **più siti** sulla stessa macchina aggiungendo file di configurazione in 
+Si abilità un **VirtualHost** sulla stessa macchina aggiungendo file di configurazione in 
 >*/etc/apache2/sites-avaiable/...*.<br>
 
 Con il comando
->*cp 000-default.conf nomeFile.conf*
+>*cp 000-default.conf [nomeFile].conf*
 
 creiamo una copia del file di default su cui poi potremmo lavorare<br>
 Esempio configurazione:<br>
@@ -64,7 +64,7 @@ ServerAdmin webmaster@localhost<br>
 DocumentRoot /var/www/SitoA/webroot/*
 
 Dopo avr creato i flie in */etc/apache2/sites-avaiable/...* si **crea un nuovo sito con le configurazioni appena modificate**
->*a2ensite "nomeFile.conf"*.<br>
+>*a2ensite [nomeFile].conf*.<br>
 
 la risposta sarà:
 >
@@ -79,7 +79,7 @@ Fatto questo si fa il reload di apache con questo comando<br>
 
 ## CHECKPOINT :white_check_mark:
 Si controlla con
->*netstat apache2*
+>*netstat*
 
 se è attivo il servizio di apache2.<br>
 
@@ -91,15 +91,15 @@ Modificare il **file di configurazione**
 
 come scritto su campus dal professore.<br>
 Aggiungere nuovo **utente** 
->*useradd -s /bin/bash -d /var/www/... -m nomeUtente*.<br>
+>*useradd -s /bin/bash -d /var/www/... -m [nomeUtente]*.<br>
 
 Impostare la **password per l'utente** 
->*passwd nomeUtente* --> *Inserimento della password*.<br>
+>*passwd [nomeUtente]* --> *Inserimento della password*.<br>
 
 Dopo la creazione dell' utente si vanno a dare i **permessi alle cartelle** 
->*chown -R nomeUtente:nomeUtente /var/www/cartellaSito*.<br>
+>*chown -R [nomeUtente]:[nomeUtente] /var/www/[cartellaSito].<br>
 
 ## CHECKPOINT :white_check_mark:
-Per controllare di avere creato in maniera adeguata l'utente si controlla accedendo da **PuTTY** con il *nomeUtente* e la *Password* corrispondente.
+Per controllare di avere creato in maniera adeguata l'utente si controlla accedendo da **PuTTY** con il [nomeUtente] e la [Password] corrispondente.
 
 Facendo così si potrà sia scaricare che caricare file sulla cartella in **FTP** da remoto sul desktop attraverso Filezilla.<br>
