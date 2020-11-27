@@ -7,6 +7,8 @@ Installiamo **ssh**
 
 Modifica dell'**indirizzo IP** tramite file presente in */etc/netplan/00-installer-config.yaml*.<br>
 Esempio Configurazione:<br>
+>
+>
 >*# This is the network config written by 'subiquity'<br>
 >
 >   network:<br>
