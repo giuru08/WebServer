@@ -9,9 +9,7 @@ Modifica dell'**indirizzo IP** tramite file presente in */etc/netplan/00-install
 Esempio Configurazione:<br>
 >
 >
->*    # This is the network config written by 'subiquity'<br>
->
->       network:<br>
+>     network:<br>
 >
 >     version: 2<br>
 >
