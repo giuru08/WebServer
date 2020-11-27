@@ -29,10 +29,10 @@ Esempio Configurazione:<br>
 Esempio di risposta:
 >
 >
->Warning: Stopping systemd-networkd.service, but it can still be activated by:<br>
->  systemd-networkd.socket<br>
->Do you want to keep these settings?<br>
->Press ENTER before the timeout to accept the new configuration
+>   Warning: Stopping systemd-networkd.service, but it can still be activated by:
+>     systemd-networkd.socket
+>   Do you want to keep these settings?
+>   Press ENTER before the timeout to accept the new configuration
 
 Premere enter per accettare le configurazioni fatte.<br>
 Applicare la **modalità bridge** da VirtualBox.<br>
@@ -64,7 +64,15 @@ ServerAdmin webmaster@localhost<br>
 DocumentRoot /var/www/SitoA/webroot/*
 
 Dopo avr creato i flie in */etc/apache2/sites-avaiable/...* si **crea un nuovo sito con le configurazioni appena modificate**
->*a2ensite*.<br>
+>*a2ensite "nomeFile.conf"*.<br>
+
+la risposta sarà:
+>
+>
+>   Enabling site 000-default.
+>   To activate the new configuration, you need to run:
+>     systemctl reload apache2
+
 
 Fatto questo si fa il reload di apache con questo comando<br>
 >*systemctl reload apache2*
