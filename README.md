@@ -39,7 +39,7 @@ Applicare la **modalità bridge** da VirtualBox.<br>
 
 ## CHECKPOINT :white_check_mark:
 Controlliamo sia in funzione con un ping a Google, con un ping dalla macchina fisica a quella virtuale o con il **comando**:
->*ip addr
+>*ip addr*
 
 Esempio di **ping**: 
 >*ping www.google.com*
