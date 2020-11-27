@@ -63,7 +63,7 @@ Esempio configurazione:<br>
 ServerAdmin webmaster@localhost<br>
 DocumentRoot /var/www/SitoA/webroot/*
 
-Dopo avr creato i flie in */etc/apache2/sites-avaiable/...* si **crea un nuovo sito con le configurazioni appena modificate**
+Dopo avr creato i file in */etc/apache2/sites-avaiable/...* si **crea un nuovo sito con le configurazioni appena modificate**
 >*a2ensite [nomeFile].conf*.<br>
 
 la risposta sarà:
