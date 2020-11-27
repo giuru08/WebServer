@@ -29,9 +29,9 @@ Esempio Configurazione:<br>
 Esempio di risposta:
 >
 >
->Warning: Stopping systemd-networkd.service, but it can still be activated by:
->  systemd-networkd.socket
->Do you want to keep these settings?
+>Warning: Stopping systemd-networkd.service, but it can still be activated by:<br>
+>  systemd-networkd.socket<br>
+>Do you want to keep these settings?<br>
 >Press ENTER before the timeout to accept the new configuration
 
 Premere enter per accettare le configurazioni fatte.<br>
