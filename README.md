@@ -46,12 +46,9 @@ Con il comando
 
 creiamo una copia del file di default su cui poi potremmo lavorare
 Esempio configurazione:<br>
->ServerName sitoa-121.virtual.marconi
-
- 			  ServerAdmin webmaster@localhost
-        DocumentRoot /var/www/SitoA/webroot/
-
-
+>*ServerName sitoa-121.virtual.marconi<br>
+ServerAdmin webmaster@localhost<br>
+DocumentRoot /var/www/SitoA/webroot/*
 
 Dopo avr creato i flie in */etc/apache2/sites-avaiable/...* si **crea un nuovo sito con le configurazioni appena modificate**
 >*a2ensite*.<br>
