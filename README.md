@@ -8,17 +8,28 @@ Installiamo **ssh**
 Modifica dell'**indirizzo IP** tramite file presente in */etc/netplan/00-installer-config.yaml*.<br>
 Esempio Configurazione:<br>
 >*# This is the network config written by 'subiquity'<br>
-network:<br>
-  version: 2<br>
-  renderer: networkd<br>
-  ethernets:<br>
-    enp0s3:<br>
-     # dhcp4: no<br>
-      addresses: [172.16.29.121/16]<br>
-      gateway4: 172.16.1.7<br>
-      nameservers:<br>
-          search: [virtual.marconi]<br>
-          addresses: [172.16.1.18, 172.16.1.10]*<br>
+>
+>   network:<br>
+>
+>     version: 2<br>
+>
+>     renderer: networkd<br>
+>
+>     ethernets:<br>
+>
+>       enp0s3:<br>
+>
+>        # dhcp4: no<br>
+>
+>         addresses: [172.16.29.121/16]<br>
+>
+>         gateway4: 172.16.1.7<br>
+>
+>         nameservers:<br>
+>
+>             search: [virtual.marconi]<br>
+>
+>             addresses: [172.16.1.18, 172.16.1.10]*<br>
 
 
 
