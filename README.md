@@ -9,32 +9,30 @@ Modifica dell'**indirizzo IP** tramite file presente in */etc/netplan/00-install
 Esempio Configurazione:<br>
 >
 >
->     network:<br>
->
->     version: 2<br>
->
->     renderer: networkd<br>
->
->     ethernets:<br>
->
->       enp0s3:<br>
->
->        # dhcp4: no<br>
->
->         addresses: [172.16.29.121/16]<br>
->
->         gateway4: 172.16.1.7<br>
->
->         nameservers:<br>
->
->             search: [virtual.marconi]<br>
->
->             addresses: [172.16.1.18, 172.16.1.10]*<br>
+>     network:
+>     version: 2
+>     renderer: networkd
+>     ethernets:
+>       enp0s3:
+>        # dhcp4: no
+>         addresses: [172.16.29.121/16]
+>         gateway4: 172.16.1.7
+>         nameservers:
+>             search: [virtual.marconi]
+>             addresses: [172.16.1.18, 172.16.1.10]
 
 
 
 **Comando** 
 >*netplan try*
+
+Esempio di risposta:
+>
+>
+>Warning: Stopping systemd-networkd.service, but it can still be activated by:
+>  systemd-networkd.socket
+>Do you want to keep these settings?
+>Press ENTER before the timeout to accept the new configuration
 
 Premere enter per accettare le configurazioni fatte.<br>
 Applicare la **modalità bridge** da VirtualBox.<br>
@@ -55,7 +53,7 @@ Si creano **più siti** sulla stessa macchina aggiungendo file di configurazione
 Con il comando
 >*cp 000-default.conf nomeFile.conf*
 
-creiamo una copia del file di default su cui poi potremmo lavorare
+creiamo una copia del file di default su cui poi potremmo lavorare<br>
 Esempio configurazione:<br>
 >*ServerName sitoa-121.virtual.marconi<br>
 ServerAdmin webmaster@localhost<br>
@@ -80,7 +78,7 @@ Modificare il **file di configurazione**
 >*/etc/vsftp.conf* 
 
 come scritto su campus dal professore.<br>
-Aggiungere 3 nuovi **utenti**, uno per ogni server 
+Aggiungere nuovo **utente**, uno per ogni server 
 >*useradd -s /bin/bash -d /var/www/... -m nomeUtente*.<br>
 
 Impostare la **password per ogni utente** 
