@@ -40,7 +40,7 @@ Premere enter per accettare le configurazioni fatte.<br>
 Applicare la **modalità bridge** da VirtualBox.<br>
 
 ## CHECKPOINT :white_check_mark:
-Controlliamo sia apposto con un ping a Google o un ping dalla macchina fisica a quella virtuale.
+Controlliamo sia in funzione con un ping a Google o un ping dalla macchina fisica a quella virtuale.
 >*ping www.google.com*
 
 o 
@@ -53,7 +53,7 @@ Si creano **più siti** sulla stessa macchina aggiungendo file di configurazione
 >*/etc/apache2/sites-avaiable/...*.<br>
 
 Con il comando
->*cp 000-default.conf nomeFile.conf
+>*cp 000-default.conf nomeFile.conf*
 
 creiamo una copia del file di default su cui poi potremmo lavorare
 Esempio configurazione:<br>
